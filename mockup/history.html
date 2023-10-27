@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker App - Transaction History</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Transaction History Content -->
+    <div class="p-4">
+      <!-- Transaction History List -->
+      <div class="bg-white p-4 rounded-lg">
+        <h2 class="text-center text-xl font-semibold mb-4">
+          Transaction History
+        </h2>
+
+        <!-- Sample Transactions -->
+        <ul>
+          <li class="flex justify-between py-2 border-b">
+            <span>Rent</span>
+            <span class="text-red-500">-$800</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Salary</span>
+            <span class="text-green-500">+$2000</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Dinner</span>
+            <span class="text-red-500">-$20</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Groceries</span>
+            <span class="text-red-500">-$45</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Refund</span>
+            <span class="text-green-500">+$15</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Utilities</span>
+            <span class="text-red-500">-$60</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-3 text-center py-2">
+          <!-- Home/Dashboard Icon -->
+          <div>
+            <i class="fas fa-home text-xl"></i>
+            <p>Home</p>
+          </div>
+
+          <!-- New Record Icon -->
+          <div class="text-blue-500">
+            <div
+              class="bg-blue-500 text-white rounded-full w-12 h-12 mx-auto mb-1 flex items-center justify-center"
+            >
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+
+          <!-- History Icon -->
+          <div>
+            <i class="fas fa-history text-xl"></i>
+            <p>History</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
